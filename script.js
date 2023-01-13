@@ -19,8 +19,8 @@ setInterval(() => {
 
     let unittime=hour>12?"PM":"AM";
     let newhr=hour>12?hour%10-2:hour;
-    newhr=newhr<10?`0${newhr}`:newhr;
-    let newSec=sec<10?`0${sec}`:sec;
-    let newMin=min<10?`0${min}`:min;
+    newhr=newhr<10?`0+${newhr}`:newhr;
+    let newSec=sec<10?`0+${sec}`:sec;
+    let newMin=min<10?`0+${min}`:min;
     digitalDiv.innerText=`${newhr} : ${newMin} : ${newSec} : ${unittime}`;
 }, 1000);
