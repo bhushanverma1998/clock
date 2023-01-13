@@ -1,0 +1,51 @@
+.clock-container{
+    background: url(clock.png) no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    position: relative;
+}
+
+.hours, .min, .sec{
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+
+.hours{
+    width: .75rem;
+    height: 10rem;
+    top: 5.8rem;
+    left: 14.8rem;
+    opacity: .7;
+}
+
+.min{
+    width: .5rem;
+    height: 13rem;
+    top: 2.5rem;
+    left: 15.2rem;
+    opacity: .7;
+}
+
+.sec{
+    width: .3rem;
+    height: 14rem;
+    top: 1.5rem;
+    left: 15.5rem;
+    opacity: .5;
+}
+
+#clock-digital{
+    height: 4rem;
+    width: 12rem;
+    border: 1px solid black;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    font-size: x-large;
+}
